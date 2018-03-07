@@ -42,6 +42,9 @@ def main():
     passwd = vd_dict['passwd']
     upgrade_result = {}
     for i in range(len(pl.ix[:])):
+        print "-" * 60
+        print "|            DEVICE " + pl.ix[i, 'device_name_in_vd'] + "  Upgrade starts           |"
+        print "-" * 60
         cpe_upgrade_result = 'FAILED'
         dev_dict = {}
         dev_dict["device_type"] = pl.ix[i, 'type']
@@ -64,10 +67,13 @@ def main():
         logging.debug("package info from CPE" + pack_info['PACKAGE_NAME'])
         logging.debug("package info from excel sheet" + pl.ix[i, 'package_info'])
         if pack_info['PACKAGE_NAME'] == pl.ix[i, 'package_info']:
-            print pl.ix[i, 'device_name_in_vd'] + "     UPGRADE RESULT :"
+            print pl.ix[i, 'device_name_in_vd'] + "     UPGRADE RESULT : FAILED"
             print "REASON: device already running with same package"
             print ">>" * 20 + "FAILED" + "<<" * 20
             upgrade_result[pl.ix[i, 'device_name_in_vd']] = 'FAILED - same package already available'
+            print "-" * 60
+            print "|            DEVICE " + pl.ix[i, 'device_name_in_vd'] + "  Upgrade Ends               |"
+            print "-" * 60
             continue
         else:
             print "**" * 40
@@ -109,6 +115,9 @@ def main():
             print "Upgrade failed. please check device."
             print ">>" * 20 + pl.ix[i, 'device_name_in_vd'] + "UPGRADE REST STATUS: " + rest_result + "<<" * 20
             upgrade_result[pl.ix[i, 'device_name_in_vd']] = 'Upgrade FAILED. Please check log for more details'
+        print "-" * 60
+        print "|            DEVICE " + pl.ix[i, 'device_name_in_vd'] + "  Upgrade Ends               |"
+        print "-" * 60
     print "+" * 104
     print "++++" * 10 + ' UPGRADE SUMMARY REPORT ' + "++++" * 10
     print "+" * 104

@@ -1,0 +1,627 @@
+2018-03-07 16:22:45,773 - root - DEBUG - SCRIPT STARTED
+2018-03-07 16:22:55,051 - paramiko.transport - DEBUG - starting thread (client mode): 0x2e00a850L
+2018-03-07 16:22:55,052 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_1.16.0
+2018-03-07 16:22:55,068 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.8
+2018-03-07 16:22:55,068 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2018-03-07 16:22:55,070 - paramiko.transport - DEBUG - kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group-exchange-sha1', u'diffie-hellman-group14-sha1', u'diffie-hellman-group1-sha1'] server key:[u'ssh-rsa', u'ssh-dss', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'arcfour'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'arcfour'] client mac:[u'hmac-sha1', u'hmac-ripemd160'] server mac:[u'hmac-sha1', u'hmac-ripemd160'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2018-03-07 16:22:55,070 - paramiko.transport - DEBUG - Kex agreed: diffie-hellman-group1-sha1
+2018-03-07 16:22:55,070 - paramiko.transport - DEBUG - Cipher agreed: aes128-ctr
+2018-03-07 16:22:55,070 - paramiko.transport - DEBUG - MAC agreed: hmac-sha1
+2018-03-07 16:22:55,071 - paramiko.transport - DEBUG - Compression agreed: none
+2018-03-07 16:22:55,135 - paramiko.transport - DEBUG - kex engine KexGroup1 specified hash_algo <built-in function openssl_sha1>
+2018-03-07 16:22:55,136 - paramiko.transport - DEBUG - Switch to new keys ...
+2018-03-07 16:22:55,152 - paramiko.transport - DEBUG - Adding ssh-rsa host key for 10.91.116.233: 525b3b2d4abf7dea1d16a467eab12379
+2018-03-07 16:22:55,173 - paramiko.transport - DEBUG - userauth is OK
+2018-03-07 16:22:55,214 - paramiko.transport - INFO - Authentication (password) successful!
+2018-03-07 16:22:55,217 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2018-03-07 16:22:55,234 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2018-03-07 16:22:55,235 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2018-03-07 16:22:55,252 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2018-03-07 16:22:55,254 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2018-03-07 16:22:56,356 - netmiko - DEBUG - read_channel:              .---.,
+            (      ``.
+       _     \        )    __      ________ _____   _____
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\
+           \  | /
+            \_|/                     ___ _    _____  ___   ___  _ ___
+                                    | __| |  | __\ \/ | \ / / \| | __|
+                                    | _|| |__| _| >  < \ V /| .` | _|
+                                    |_| |____|___/_/\_\ \_/ |_|\_|_|
+
+
+Versa FlexVNF software
+Release     :	16.1R1 (S3.3)
+Release date:	20171107
+Package ID  :	e51d9e9	
+
+Last login: Wed Mar  7 10:48:06 2018 from 10.91.124.96
+admin@CPE26-sathish:~$ 
+2018-03-07 16:22:56,457 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:22:58,459 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:22:58,460 - netmiko - DEBUG - write_channel: 
+
+2018-03-07 16:22:58,561 - netmiko - DEBUG - read_channel: 
+admin@CPE26-sathish:~$ 
+2018-03-07 16:22:58,562 - netmiko - DEBUG - write_channel: cli
+
+2018-03-07 16:22:58,863 - netmiko - DEBUG - read_channel: cli
+
+
+             .---.,
+            (      ``.
+       _     \        )    __      ________ _____   _____
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\
+           \  | /
+            \_|/                   _  _ ___ _______      _____  ___ _  _____
+                                  | \| | __|_   _\ \    / / _ \| _ \ |/ / __|
+                                  | .` | _|  | |  \ \/\/ / (_) |   / ' <\__ \
+                                  |_|\_|___| |_|   \_/\_/ \___/|_|_\_|\_\___/
+
+
+
+admin connected from 10.91.124.96 using ssh on CPE26-sathish
+[?7hadmin@CPE26-sathish-cli> 
+2018-03-07 16:22:58,863 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:22:58,864 - netmiko - DEBUG - write_channel: 
+
+2018-03-07 16:22:58,964 - netmiko - DEBUG - read_channel: 
+admin@CPE26-sathish-cli> 
+2018-03-07 16:22:59,065 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:22:59,166 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:22:59,166 - netmiko - DEBUG - In disable_paging
+2018-03-07 16:22:59,166 - netmiko - DEBUG - Command: set screen length 0
+
+2018-03-07 16:22:59,167 - netmiko - DEBUG - write_channel: set screen length 0
+
+2018-03-07 16:22:59,167 - netmiko - DEBUG - Pattern is: admin\@CPE26\-sathish\-cli
+2018-03-07 16:22:59,175 - netmiko - DEBUG - _read_channel_expect read_data: set
+2018-03-07 16:22:59,276 - netmiko - DEBUG - _read_channel_expect read_data:  screen
+2018-03-07 16:22:59,376 - netmiko - DEBUG - _read_channel_expect read_data:  length 0
+
+2018-03-07 16:22:59,477 - netmiko - DEBUG - _read_channel_expect read_data: [ok][2018-03-07 10:50:36]
+admin@CPE26-sathish-cli> 
+2018-03-07 16:22:59,477 - netmiko - DEBUG - Pattern found: admin\@CPE26\-sathish\-cli set screen length 0
+[ok][2018-03-07 10:50:36]
+admin@CPE26-sathish-cli> 
+2018-03-07 16:22:59,478 - netmiko - DEBUG - set screen length 0
+[ok][2018-03-07 10:50:36]
+admin@CPE26-sathish-cli> 
+2018-03-07 16:22:59,478 - netmiko - DEBUG - Exiting disable_paging
+2018-03-07 16:22:59,478 - netmiko - DEBUG - write_channel: set screen width 0
+
+2018-03-07 16:22:59,478 - netmiko - DEBUG - Pattern is: admin\@CPE26\-sathish\-cli
+2018-03-07 16:22:59,482 - netmiko - DEBUG - _read_channel_expect read_data: set
+2018-03-07 16:22:59,582 - netmiko - DEBUG - _read_channel_expect read_data:  screen
+2018-03-07 16:22:59,683 - netmiko - DEBUG - _read_channel_expect read_data:  width 0
+
+2018-03-07 16:22:59,784 - netmiko - DEBUG - _read_channel_expect read_data: [ok][2018-03-07 10:50:36]
+admin@CPE26-sathish-cli> 
+2018-03-07 16:22:59,784 - netmiko - DEBUG - Pattern found: admin\@CPE26\-sathish\-cli set screen width 0
+[ok][2018-03-07 10:50:36]
+admin@CPE26-sathish-cli> 
+2018-03-07 16:23:00,085 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:05,087 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:05,088 - netmiko - DEBUG - write_channel: 
+
+2018-03-07 16:23:05,189 - netmiko - DEBUG - read_channel: 
+
+2018-03-07 16:23:05,189 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:05,189 - netmiko - DEBUG - write_channel: 
+
+2018-03-07 16:23:05,290 - netmiko - DEBUG - read_channel: admin@CPE26-sathish-cli> 
+
+2018-03-07 16:23:05,391 - netmiko - DEBUG - read_channel: admin@CPE26-sathish-cli> 
+2018-03-07 16:23:05,391 - root - DEBUG - <netmiko.versa.versa_ssh.VersaSSH object at 0x7f8e2e00a710> connection opened
+2018-03-07 16:23:05,391 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:05,392 - netmiko - DEBUG - write_channel: 
+
+2018-03-07 16:23:05,492 - netmiko - DEBUG - read_channel: 
+
+2018-03-07 16:23:05,493 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:05,493 - netmiko - DEBUG - write_channel: 
+
+2018-03-07 16:23:05,594 - netmiko - DEBUG - read_channel: admin@CPE26-sathish-cli> 
+
+2018-03-07 16:23:05,694 - netmiko - DEBUG - read_channel: admin@CPE26-sathish-cli> 
+2018-03-07 16:23:05,895 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:05,896 - netmiko - DEBUG - write_channel: show system package-info | tab
+
+2018-03-07 16:23:05,896 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:06,097 - netmiko - DEBUG - read_channel: show
+2018-03-07 16:23:06,097 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:06,298 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:06,499 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:06,700 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:06,900 - netmiko - DEBUG - read_channel:  system
+2018-03-07 16:23:06,901 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:07,101 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:07,302 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:07,503 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:07,704 - netmiko - DEBUG - read_channel:  package-info
+2018-03-07 16:23:07,704 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:07,904 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:08,105 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:08,306 - netmiko - DEBUG - read_channel:  | tab
+
+2018-03-07 16:23:08,307 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:08,507 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:08,708 - netmiko - DEBUG - read_channel: PACKAGE                                                                                     BUILD                     
+ID       MAJOR  MINOR  DATE      PACKAGE NAME                                      RELTYPE  TYPE   BRANCH    CREATOR  
+----------------------------------------------------------------------------------------------------------------------
+e51d9e9  16     1      20171107  versa-flexvnf-20171107-024119-e51d9e9-16.1R1-wsm  R1       S3.3   16.1R1S3  jenkins  
+
+[ok][2018-03-07 10:50:45]
+admin@CPE26-sathish-cli> 
+2018-03-07 16:23:08,710 - root - DEBUG - PACKAGE                                                                                     BUILD                     
+ID       MAJOR  MINOR  DATE      PACKAGE NAME                                      RELTYPE  TYPE   BRANCH    CREATOR  
+----------------------------------------------------------------------------------------------------------------------
+e51d9e9  16     1      20171107  versa-flexvnf-20171107-024119-e51d9e9-16.1R1-wsm  R1       S3.3   16.1R1S3  jenkins  
+
+[ok][2018-03-07 10:50:45]
+2018-03-07 16:23:08,711 - root - DEBUG - package info from CPEversa-flexvnf-20171107-024119-e51d9e9-16.1R1-wsm
+2018-03-07 16:23:08,712 - root - DEBUG - package info from excel sheetversa-flexvnf-20171107-024119-e51d9e9-16.1R1-wsm
+2018-03-07 16:23:08,714 - paramiko.transport - DEBUG - starting thread (client mode): 0x2d924c90L
+2018-03-07 16:23:08,714 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_1.16.0
+2018-03-07 16:23:08,734 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.8
+2018-03-07 16:23:08,734 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2018-03-07 16:23:08,735 - paramiko.transport - DEBUG - kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group-exchange-sha1', u'diffie-hellman-group14-sha1', u'diffie-hellman-group1-sha1'] server key:[u'ssh-rsa', u'ssh-dss', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'arcfour'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'arcfour'] client mac:[u'hmac-sha1', u'hmac-ripemd160'] server mac:[u'hmac-sha1', u'hmac-ripemd160'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2018-03-07 16:23:08,735 - paramiko.transport - DEBUG - Kex agreed: diffie-hellman-group1-sha1
+2018-03-07 16:23:08,735 - paramiko.transport - DEBUG - Cipher agreed: aes128-ctr
+2018-03-07 16:23:08,736 - paramiko.transport - DEBUG - MAC agreed: hmac-sha1
+2018-03-07 16:23:08,736 - paramiko.transport - DEBUG - Compression agreed: none
+2018-03-07 16:23:08,800 - paramiko.transport - DEBUG - kex engine KexGroup1 specified hash_algo <built-in function openssl_sha1>
+2018-03-07 16:23:08,801 - paramiko.transport - DEBUG - Switch to new keys ...
+2018-03-07 16:23:08,815 - paramiko.transport - DEBUG - Adding ssh-rsa host key for 10.91.116.234: 38fcc4d621b4437e86c203baac42f3a2
+2018-03-07 16:23:08,841 - paramiko.transport - DEBUG - userauth is OK
+2018-03-07 16:23:08,879 - paramiko.transport - INFO - Authentication (password) successful!
+2018-03-07 16:23:08,880 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2018-03-07 16:23:08,897 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2018-03-07 16:23:08,897 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2018-03-07 16:23:08,915 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2018-03-07 16:23:08,917 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2018-03-07 16:23:10,018 - netmiko - DEBUG - read_channel:              .---.,
+            (      ``.
+       _     \        )    __      ________ _____   _____
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\
+           \  | /
+            \_|/                     ___ _    _____  ___   ___  _ ___
+                                    | __| |  | __\ \/ | \ / / \| | __|
+                                    | _|| |__| _| >  < \ V /| .` | _|
+                                    |_| |____|___/_/\_\ \_/ |_|\_|_|
+
+
+Versa FlexVNF software
+Release     :	16.1R1 (S3.3)
+Release date:	20171107
+Package ID  :	e51d9e9	
+
+Last login: Wed Mar  7 10:45:14 2018 from 10.91.124.96
+admin@CPE27-sathish:~$ 
+2018-03-07 16:23:10,119 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:12,121 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:12,122 - netmiko - DEBUG - write_channel: 
+
+2018-03-07 16:23:12,223 - netmiko - DEBUG - read_channel: 
+admin@CPE27-sathish:~$ 
+2018-03-07 16:23:12,224 - netmiko - DEBUG - write_channel: cli
+
+2018-03-07 16:23:12,525 - netmiko - DEBUG - read_channel: cli
+
+
+             .---.,
+            (      ``.
+       _     \        )    __      ________ _____   _____
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\
+           \  | /
+            \_|/                   _  _ ___ _______      _____  ___ _  _____
+                                  | \| | __|_   _\ \    / / _ \| _ \ |/ / __|
+                                  | .` | _|  | |  \ \/\/ / (_) |   / ' <\__ \
+                                  |_|\_|___| |_|   \_/\_/ \___/|_|_\_|\_\___/
+
+
+
+admin connected from 10.91.124.96 using ssh on CPE27-sathish
+[?7hadmin@CPE27-sathish-cli> 
+2018-03-07 16:23:12,525 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:12,525 - netmiko - DEBUG - write_channel: 
+
+2018-03-07 16:23:12,626 - netmiko - DEBUG - read_channel: 
+admin@CPE27-sathish-cli> 
+2018-03-07 16:23:12,727 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:12,827 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:12,828 - netmiko - DEBUG - In disable_paging
+2018-03-07 16:23:12,828 - netmiko - DEBUG - Command: set screen length 0
+
+2018-03-07 16:23:12,828 - netmiko - DEBUG - write_channel: set screen length 0
+
+2018-03-07 16:23:12,829 - netmiko - DEBUG - Pattern is: admin\@CPE27\-sathish\-cli
+2018-03-07 16:23:12,830 - netmiko - DEBUG - _read_channel_expect read_data: set
+2018-03-07 16:23:12,931 - netmiko - DEBUG - _read_channel_expect read_data:  screen
+2018-03-07 16:23:13,031 - netmiko - DEBUG - _read_channel_expect read_data:  length 0
+
+2018-03-07 16:23:13,132 - netmiko - DEBUG - _read_channel_expect read_data: [ok][2018-03-07 10:47:47]
+admin@CPE27-sathish-cli> 
+2018-03-07 16:23:13,133 - netmiko - DEBUG - Pattern found: admin\@CPE27\-sathish\-cli set screen length 0
+[ok][2018-03-07 10:47:47]
+admin@CPE27-sathish-cli> 
+2018-03-07 16:23:13,133 - netmiko - DEBUG - set screen length 0
+[ok][2018-03-07 10:47:47]
+admin@CPE27-sathish-cli> 
+2018-03-07 16:23:13,133 - netmiko - DEBUG - Exiting disable_paging
+2018-03-07 16:23:13,134 - netmiko - DEBUG - write_channel: set screen width 0
+
+2018-03-07 16:23:13,135 - netmiko - DEBUG - Pattern is: admin\@CPE27\-sathish\-cli
+2018-03-07 16:23:13,136 - netmiko - DEBUG - _read_channel_expect read_data: set
+2018-03-07 16:23:13,237 - netmiko - DEBUG - _read_channel_expect read_data:  screen
+2018-03-07 16:23:13,337 - netmiko - DEBUG - _read_channel_expect read_data:  width 0
+
+2018-03-07 16:23:13,438 - netmiko - DEBUG - _read_channel_expect read_data: [ok][2018-03-07 10:47:47]
+admin@CPE27-sathish-cli> 
+2018-03-07 16:23:13,438 - netmiko - DEBUG - Pattern found: admin\@CPE27\-sathish\-cli set screen width 0
+[ok][2018-03-07 10:47:47]
+admin@CPE27-sathish-cli> 
+2018-03-07 16:23:13,739 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:18,744 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:18,745 - netmiko - DEBUG - write_channel: 
+
+2018-03-07 16:23:18,845 - netmiko - DEBUG - read_channel: 
+admin@CPE27-sathish-cli> 
+2018-03-07 16:23:18,946 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:18,946 - root - DEBUG - <netmiko.versa.versa_ssh.VersaSSH object at 0x7f8e2d924b90> connection opened
+2018-03-07 16:23:18,986 - paramiko.transport - DEBUG - EOF in transport thread
+2018-03-07 16:23:19,010 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:19,011 - netmiko - DEBUG - write_channel: 
+
+2018-03-07 16:23:19,112 - netmiko - DEBUG - read_channel: 
+admin@CPE27-sathish-cli> 
+2018-03-07 16:23:19,212 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:19,413 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:19,414 - netmiko - DEBUG - write_channel: show system package-info | tab
+
+2018-03-07 16:23:19,414 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:19,615 - netmiko - DEBUG - read_channel: show system package-info
+2018-03-07 16:23:19,616 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:19,817 - netmiko - DEBUG - read_channel:  | tab
+PACKAGE                                                                                     BUILD                     
+ID       MAJOR  MINOR  DATE      PACKAGE NAME                                      RELTYPE  TYPE   BRANCH    CREATOR  
+----------------------------------------------------------------------------------------------------------------------
+e51d9e9  16     1      20171107  versa-flexvnf-20171107-024119-e51d9e9-16.1R1-wsm  R1       S3.3   16.1R1S3  jenkins  
+
+[ok][2018-03-07 10:47:53]
+admin@CPE27-sathish-cli> 
+2018-03-07 16:23:19,817 - root - DEBUG - PACKAGE                                                                                     BUILD                     
+ID       MAJOR  MINOR  DATE      PACKAGE NAME                                      RELTYPE  TYPE   BRANCH    CREATOR  
+----------------------------------------------------------------------------------------------------------------------
+e51d9e9  16     1      20171107  versa-flexvnf-20171107-024119-e51d9e9-16.1R1-wsm  R1       S3.3   16.1R1S3  jenkins  
+
+[ok][2018-03-07 10:47:53]
+2018-03-07 16:23:19,818 - root - DEBUG - package info from CPEversa-flexvnf-20171107-024119-e51d9e9-16.1R1-wsm
+2018-03-07 16:23:19,819 - root - DEBUG - package info from excel sheetversa-flexvnf-20171107-024119-e51d9e9-16.1R1-wsm
+2018-03-07 16:23:19,821 - paramiko.transport - DEBUG - starting thread (client mode): 0x2e00aad0L
+2018-03-07 16:23:19,822 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_1.16.0
+2018-03-07 16:23:19,841 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.8
+2018-03-07 16:23:19,841 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2018-03-07 16:23:19,842 - paramiko.transport - DEBUG - kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group-exchange-sha1', u'diffie-hellman-group14-sha1', u'diffie-hellman-group1-sha1'] server key:[u'ssh-rsa', u'ssh-dss', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'arcfour'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'arcfour'] client mac:[u'hmac-sha1', u'hmac-ripemd160'] server mac:[u'hmac-sha1', u'hmac-ripemd160'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2018-03-07 16:23:19,842 - paramiko.transport - DEBUG - Kex agreed: diffie-hellman-group1-sha1
+2018-03-07 16:23:19,843 - paramiko.transport - DEBUG - Cipher agreed: aes128-ctr
+2018-03-07 16:23:19,843 - paramiko.transport - DEBUG - MAC agreed: hmac-sha1
+2018-03-07 16:23:19,843 - paramiko.transport - DEBUG - Compression agreed: none
+2018-03-07 16:23:19,906 - paramiko.transport - DEBUG - kex engine KexGroup1 specified hash_algo <built-in function openssl_sha1>
+2018-03-07 16:23:19,907 - paramiko.transport - DEBUG - Switch to new keys ...
+2018-03-07 16:23:19,922 - paramiko.transport - DEBUG - Adding ssh-rsa host key for 10.91.116.245: b382a2958b4d223d8daf265c7bcc203d
+2018-03-07 16:23:19,947 - paramiko.transport - DEBUG - userauth is OK
+2018-03-07 16:23:19,990 - paramiko.transport - INFO - Authentication (password) successful!
+2018-03-07 16:23:20,024 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2018-03-07 16:23:20,025 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2018-03-07 16:23:20,026 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2018-03-07 16:23:20,031 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2018-03-07 16:23:20,033 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2018-03-07 16:23:21,135 - netmiko - DEBUG - read_channel:              .---.,
+            (      ``.
+       _     \        )    __      ________ _____   _____
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\
+           \  | /
+            \_|/                     ___ _    _____  ___   ___  _ ___
+                                    | __| |  | __\ \/ | \ / / \| | __|
+                                    | _|| |__| _| >  < \ V /| .` | _|
+                                    |_| |____|___/_/\_\ \_/ |_|\_|_|
+
+
+Versa FlexVNF software
+Release     :	16.1R1 (S3.3)
+Release date:	20171107
+Package ID  :	e51d9e9	
+
+Last login: Tue Mar  6 19:35:15 2018 from 10.91.124.96
+
+
+   ____      _ _     _____         _                 _                    
+  / ___|___ | | |_  |_   _|__  ___| |__  _ __   ___ | | ___   ____ _   _  
+ | |   / _ \| | __|   | |/ _ \/ __|  _ \|  _ \ / _ \| |/ _ \ / _  | | | | 
+ | |__| (_) | | |_    | |  __/ (__| | | | | | | (_) | | (_) | (_| | |_| | 
+  \____\___/|_|\__|   |_|\___|\___|_| |_|_| |_|\___/|_|\___/ \__, |\__, | 
+                                                             |___/ |___/  
+               ____           	     _
+              / ___|  ___ _ ____   _(_) ___ ___  ___ 
+              \___ \ / _ \  __\ \ / / |/ __/ _ \/ __|
+               ___) |  __/ |   \ V /| | (_|  __/\___\
+              |____/ \___|_|    \_/ |_|\___\___||___/
+
+
+     Type   ./STARTUP.pl   ...to start Colt CPE Manager tool. 
+
+
+
+[admin@CPE-Osbourne2: COLT] # 
+2018-03-07 16:23:21,236 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:23,238 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:23,239 - netmiko - DEBUG - write_channel: 
+
+2018-03-07 16:23:23,340 - netmiko - DEBUG - read_channel: 
+[admin@CPE-Osbourne2: COLT] # 
+2018-03-07 16:23:23,340 - netmiko - DEBUG - write_channel: cli
+
+2018-03-07 16:23:23,641 - netmiko - DEBUG - read_channel: cli
+
+
+             .---.,
+            (      ``.
+       _     \        )    __      ________ _____   _____
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\
+           \  | /
+            \_|/                   _  _ ___ _______      _____  ___ _  _____
+                                  | \| | __|_   _\ \    / / _ \| _ \ |/ / __|
+                                  | .` | _|  | |  \ \/\/ / (_) |   / ' <\__ \
+                                  |_|\_|___| |_|   \_/\_/ \___/|_|_\_|\_\___/
+
+
+
+admin connected from 10.91.124.96 using ssh on CPE-Osbourne2
+[?7hadmin@CPE-Osbourne2-cli> 
+2018-03-07 16:23:23,642 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:23,642 - netmiko - DEBUG - write_channel: 
+
+2018-03-07 16:23:23,743 - netmiko - DEBUG - read_channel: 
+admin@CPE-Osbourne2-cli> 
+2018-03-07 16:23:23,843 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:23,944 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:23,945 - netmiko - DEBUG - In disable_paging
+2018-03-07 16:23:23,945 - netmiko - DEBUG - Command: set screen length 0
+
+2018-03-07 16:23:23,945 - netmiko - DEBUG - write_channel: set screen length 0
+
+2018-03-07 16:23:23,946 - netmiko - DEBUG - Pattern is: admin\@CPE\-Osbourne2\-cli
+2018-03-07 16:23:23,947 - netmiko - DEBUG - _read_channel_expect read_data: set
+2018-03-07 16:23:24,048 - netmiko - DEBUG - _read_channel_expect read_data:  screen
+2018-03-07 16:23:24,149 - netmiko - DEBUG - _read_channel_expect read_data:  length 0
+
+2018-03-07 16:23:24,250 - netmiko - DEBUG - _read_channel_expect read_data: [ok][2018-03-06 19:37:48]
+admin@CPE-Osbourne2-cli> 
+2018-03-07 16:23:24,250 - netmiko - DEBUG - Pattern found: admin\@CPE\-Osbourne2\-cli set screen length 0
+[ok][2018-03-06 19:37:48]
+admin@CPE-Osbourne2-cli> 
+2018-03-07 16:23:24,250 - netmiko - DEBUG - set screen length 0
+[ok][2018-03-06 19:37:48]
+admin@CPE-Osbourne2-cli> 
+2018-03-07 16:23:24,250 - netmiko - DEBUG - Exiting disable_paging
+2018-03-07 16:23:24,251 - netmiko - DEBUG - write_channel: set screen width 0
+
+2018-03-07 16:23:24,251 - netmiko - DEBUG - Pattern is: admin\@CPE\-Osbourne2\-cli
+2018-03-07 16:23:24,252 - netmiko - DEBUG - _read_channel_expect read_data: set
+2018-03-07 16:23:24,353 - netmiko - DEBUG - _read_channel_expect read_data:  screen
+2018-03-07 16:23:24,453 - netmiko - DEBUG - _read_channel_expect read_data:  width 0
+
+2018-03-07 16:23:24,554 - netmiko - DEBUG - _read_channel_expect read_data: [ok][2018-03-06 19:37:48]
+admin@CPE-Osbourne2-cli> 
+2018-03-07 16:23:24,554 - netmiko - DEBUG - Pattern found: admin\@CPE\-Osbourne2\-cli set screen width 0
+[ok][2018-03-06 19:37:48]
+admin@CPE-Osbourne2-cli> 
+2018-03-07 16:23:24,855 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:29,861 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:29,862 - netmiko - DEBUG - write_channel: 
+
+2018-03-07 16:23:29,962 - netmiko - DEBUG - read_channel: 
+admin@CPE-Osbourne2-cli> 
+2018-03-07 16:23:30,063 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:30,064 - root - DEBUG - <netmiko.versa.versa_ssh.VersaSSH object at 0x7f8e2d917050> connection opened
+2018-03-07 16:23:30,132 - paramiko.transport - DEBUG - EOF in transport thread
+2018-03-07 16:23:30,178 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:30,179 - netmiko - DEBUG - write_channel: 
+
+2018-03-07 16:23:30,279 - netmiko - DEBUG - read_channel: 
+admin@CPE-Osbourne2-cli> 
+2018-03-07 16:23:30,380 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:30,581 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:30,582 - netmiko - DEBUG - write_channel: show system package-info | tab
+
+2018-03-07 16:23:30,582 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:30,782 - netmiko - DEBUG - read_channel: show system package-info
+2018-03-07 16:23:30,783 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:30,984 - netmiko - DEBUG - read_channel:  | tab
+PACKAGE                                                                                     BUILD                     
+ID       MAJOR  MINOR  DATE      PACKAGE NAME                                      RELTYPE  TYPE   BRANCH    CREATOR  
+----------------------------------------------------------------------------------------------------------------------
+e51d9e9  16     1      20171107  versa-flexvnf-20171107-024119-e51d9e9-16.1R1-wsm  R1       S3.3   16.1R1S3  jenkins  
+
+[ok][2018-03-06 19:37:54]
+admin@CPE-Osbourne2-cli> 
+2018-03-07 16:23:30,984 - root - DEBUG - PACKAGE                                                                                     BUILD                     
+ID       MAJOR  MINOR  DATE      PACKAGE NAME                                      RELTYPE  TYPE   BRANCH    CREATOR  
+----------------------------------------------------------------------------------------------------------------------
+e51d9e9  16     1      20171107  versa-flexvnf-20171107-024119-e51d9e9-16.1R1-wsm  R1       S3.3   16.1R1S3  jenkins  
+
+[ok][2018-03-06 19:37:54]
+2018-03-07 16:23:30,986 - root - DEBUG - package info from CPEversa-flexvnf-20171107-024119-e51d9e9-16.1R1-wsm
+2018-03-07 16:23:30,986 - root - DEBUG - package info from excel sheetversa-flexvnf-20171107-024119-e51d9e9-16.1R1-wsm
+2018-03-07 16:23:30,988 - paramiko.transport - DEBUG - starting thread (client mode): 0x2d93fa90L
+2018-03-07 16:23:30,989 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_1.16.0
+2018-03-07 16:23:30,994 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.8
+2018-03-07 16:23:30,994 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2018-03-07 16:23:30,995 - paramiko.transport - DEBUG - kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group-exchange-sha1', u'diffie-hellman-group14-sha1', u'diffie-hellman-group1-sha1'] server key:[u'ssh-rsa', u'ssh-dss', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'arcfour'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'arcfour'] client mac:[u'hmac-sha1', u'hmac-ripemd160'] server mac:[u'hmac-sha1', u'hmac-ripemd160'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2018-03-07 16:23:30,996 - paramiko.transport - DEBUG - Kex agreed: diffie-hellman-group1-sha1
+2018-03-07 16:23:30,996 - paramiko.transport - DEBUG - Cipher agreed: aes128-ctr
+2018-03-07 16:23:30,997 - paramiko.transport - DEBUG - MAC agreed: hmac-sha1
+2018-03-07 16:23:30,997 - paramiko.transport - DEBUG - Compression agreed: none
+2018-03-07 16:23:31,054 - paramiko.transport - DEBUG - kex engine KexGroup1 specified hash_algo <built-in function openssl_sha1>
+2018-03-07 16:23:31,055 - paramiko.transport - DEBUG - Switch to new keys ...
+2018-03-07 16:23:31,057 - paramiko.transport - DEBUG - Adding ssh-rsa host key for 10.91.116.246: 20a8d7a242d805d70ea044408c0c3443
+2018-03-07 16:23:31,092 - paramiko.transport - DEBUG - userauth is OK
+2018-03-07 16:23:31,109 - paramiko.transport - INFO - Authentication (password) successful!
+2018-03-07 16:23:31,122 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2018-03-07 16:23:31,124 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2018-03-07 16:23:31,124 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2018-03-07 16:23:31,127 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2018-03-07 16:23:31,129 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2018-03-07 16:23:32,231 - netmiko - DEBUG - read_channel:              .---.,
+            (      ``.
+       _     \        )    __      ________ _____   _____
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\
+           \  | /
+            \_|/                     ___ _    _____  ___   ___  _ ___
+                                    | __| |  | __\ \/ | \ / / \| | __|
+                                    | _|| |__| _| >  < \ V /| .` | _|
+                                    |_| |____|___/_/\_\ \_/ |_|\_|_|
+
+
+Versa FlexVNF software
+Release     :	16.1R1 (S3.3)
+Release date:	20171107
+Package ID  :	e51d9e9	
+
+Last login: Wed Mar  7 18:50:13 2018 from 10.91.124.96
+admin@CPE-Osbourne1:~$ 
+2018-03-07 16:23:32,331 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:34,334 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:34,335 - netmiko - DEBUG - write_channel: 
+
+2018-03-07 16:23:34,435 - netmiko - DEBUG - read_channel: 
+admin@CPE-Osbourne1:~$ 
+2018-03-07 16:23:34,436 - netmiko - DEBUG - write_channel: cli
+
+2018-03-07 16:23:34,737 - netmiko - DEBUG - read_channel: cli
+
+
+             .---.,
+            (      ``.
+       _     \        )    __      ________ _____   _____
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\
+           \  | /
+            \_|/                   _  _ ___ _______      _____  ___ _  _____
+                                  | \| | __|_   _\ \    / / _ \| _ \ |/ / __|
+                                  | .` | _|  | |  \ \/\/ / (_) |   / ' <\__ \
+                                  |_|\_|___| |_|   \_/\_/ \___/|_|_\_|\_\___/
+
+
+
+admin connected from 10.91.124.96 using ssh on CPE-Osbourne1
+[?7hadmin@CPE-Osbourne1-cli> 
+2018-03-07 16:23:34,737 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:34,738 - netmiko - DEBUG - write_channel: 
+
+2018-03-07 16:23:34,838 - netmiko - DEBUG - read_channel: 
+admin@CPE-Osbourne1-cli> 
+2018-03-07 16:23:34,939 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:35,040 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:35,041 - netmiko - DEBUG - In disable_paging
+2018-03-07 16:23:35,041 - netmiko - DEBUG - Command: set screen length 0
+
+2018-03-07 16:23:35,042 - netmiko - DEBUG - write_channel: set screen length 0
+
+2018-03-07 16:23:35,042 - netmiko - DEBUG - Pattern is: admin\@CPE\-Osbourne1\-cli
+2018-03-07 16:23:35,043 - netmiko - DEBUG - _read_channel_expect read_data: set
+2018-03-07 16:23:35,144 - netmiko - DEBUG - _read_channel_expect read_data:  screen length 0
+[ok][2018-03-07 18:52:45]
+admin@CPE-Osbourne1-cli> 
+2018-03-07 16:23:35,145 - netmiko - DEBUG - Pattern found: admin\@CPE\-Osbourne1\-cli set screen length 0
+[ok][2018-03-07 18:52:45]
+admin@CPE-Osbourne1-cli> 
+2018-03-07 16:23:35,145 - netmiko - DEBUG - set screen length 0
+[ok][2018-03-07 18:52:45]
+admin@CPE-Osbourne1-cli> 
+2018-03-07 16:23:35,145 - netmiko - DEBUG - Exiting disable_paging
+2018-03-07 16:23:35,146 - netmiko - DEBUG - write_channel: set screen width 0
+
+2018-03-07 16:23:35,146 - netmiko - DEBUG - Pattern is: admin\@CPE\-Osbourne1\-cli
+2018-03-07 16:23:35,147 - netmiko - DEBUG - _read_channel_expect read_data: set
+2018-03-07 16:23:35,248 - netmiko - DEBUG - _read_channel_expect read_data:  screen width 0
+[ok][2018-03-07 18:52:45]
+admin@CPE-Osbourne1-cli> 
+2018-03-07 16:23:35,248 - netmiko - DEBUG - Pattern found: admin\@CPE\-Osbourne1\-cli set screen width 0
+[ok][2018-03-07 18:52:45]
+admin@CPE-Osbourne1-cli> 
+2018-03-07 16:23:35,549 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:40,555 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:40,555 - netmiko - DEBUG - write_channel: 
+
+2018-03-07 16:23:40,656 - netmiko - DEBUG - read_channel: 
+admin@CPE-Osbourne1-cli> 
+2018-03-07 16:23:40,756 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:40,757 - root - DEBUG - <netmiko.versa.versa_ssh.VersaSSH object at 0x7f8e2d93f990> connection opened
+2018-03-07 16:23:40,787 - paramiko.transport - DEBUG - EOF in transport thread
+2018-03-07 16:23:40,789 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:40,790 - netmiko - DEBUG - write_channel: 
+
+2018-03-07 16:23:40,890 - netmiko - DEBUG - read_channel: 
+admin@CPE-Osbourne1-cli> 
+2018-03-07 16:23:40,991 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:41,192 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:41,193 - netmiko - DEBUG - write_channel: show system package-info | tab
+
+2018-03-07 16:23:41,193 - netmiko - DEBUG - read_channel: 
+2018-03-07 16:23:41,394 - netmiko - DEBUG - read_channel: show system package-info | tab
+PACKAGE                                                                                 BUILD                     
+ID       MAJOR  MINOR  DATE      PACKAGE NAME                                  RELTYPE  TYPE   BRANCH    CREATOR  
+------------------------------------------------------------------------------------------------------------------
+e51d9e9  16     1      20171107  versa-flexvnf-20171107-021905-e51d9e9-16.1R1  R1       S3.3   16.1R1S3  jenkins  
+
+[ok][2018-03-07 18:52:51]
+admin@CPE-Osbourne1-cli> 
+2018-03-07 16:23:41,395 - root - DEBUG - PACKAGE                                                                                 BUILD                     
+ID       MAJOR  MINOR  DATE      PACKAGE NAME                                  RELTYPE  TYPE   BRANCH    CREATOR  
+------------------------------------------------------------------------------------------------------------------
+e51d9e9  16     1      20171107  versa-flexvnf-20171107-021905-e51d9e9-16.1R1  R1       S3.3   16.1R1S3  jenkins  
+
+[ok][2018-03-07 18:52:51]
+2018-03-07 16:23:41,396 - root - DEBUG - package info from CPEversa-flexvnf-20171107-021905-e51d9e9-16.1R1
+2018-03-07 16:23:41,396 - root - DEBUG - package info from excel sheetversa-flexvnf-20171107-021905-e51d9e9-16.1R1
+2018-03-07 16:23:41,396 - root - DEBUG - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-03-07 16:23:41,397 - root - DEBUG - ++++++++++++++++++++++++++++++++++++++++ UPGRADE SUMMARY REPORT ++++++++++++++++++++++++++++++++++++++++
+2018-03-07 16:23:41,397 - root - DEBUG - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-03-07 16:23:41,397 - root - DEBUG - CPE26-sathish>--->FAILED - same package already available
+2018-03-07 16:23:41,397 - root - DEBUG - CPE27-sathish>--->FAILED - same package already available
+2018-03-07 16:23:41,397 - root - DEBUG - CPE-Osbourne2>--->FAILED - same package already available
+2018-03-07 16:23:41,398 - root - DEBUG - CPE-Osbourne1>--->FAILED - same package already available
+2018-03-07 16:23:41,398 - root - DEBUG - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-03-07 16:23:41,416 - paramiko.transport - DEBUG - EOF in transport thread
