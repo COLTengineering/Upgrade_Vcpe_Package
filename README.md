@@ -23,8 +23,18 @@ drwxrwxr-x 2 sathish123 sathish123 4096 Mar  6 17:00 LOGS
 
 3) Edit upgrade_device_list.xlsx
    add your CPEs & details and save.
-4) Run UpgradeCpe.py
+4) Run script
+   python UpgradeCpe.py
 
-5) At the end of script run - SUMMARY REPORT will displayed & logged
+5) enter inputs for promptings
 
-6) Scripts Logs stored in ./LOGS folder
+
+6) At the end of script run - SUMMARY REPORT will displayed & logged
+
+7) Scripts Logs stored in ./LOGS folder
+
+--Thanks--
+Sathishkumar murugesan
+Consultant
+COLT technologies india pvt ltd
+Sathishkumar.murugesan@colt.net
